@@ -7,6 +7,30 @@ serverless deploy
 
 위 명령만 실행하시면 됩니다.
 
+```
+Service Information
+service: HBSmithMOAPI
+stage: dev
+region: ap-northeast-2
+stack: HBSmithMOAPI-dev
+resources: 30
+api keys:
+  None
+endpoints:
+  POST - https://ai3gp489ti.execute-api.ap-northeast-2.amazonaws.com/dev/messages
+  GET - https://ai3gp489ti.execute-api.ap-northeast-2.amazonaws.com/dev/messages
+  GET - https://ai3gp489ti.execute-api.ap-northeast-2.amazonaws.com/dev/messages/{id}
+  DELETE - https://ai3gp489ti.execute-api.ap-northeast-2.amazonaws.com/dev/messages/{id}
+functions:
+  create: HBSmithMOAPI-dev-create
+  list: HBSmithMOAPI-dev-list
+  get: HBSmithMOAPI-dev-get
+  delete: HBSmithMOAPI-dev-delete
+layers:
+  None
+```
+
+
 ## 테스트
 
 ### 생성
